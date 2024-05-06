@@ -189,8 +189,8 @@ function validateOptions(options) {
 function MomentTimezoneDataPlugin(options = {}) {
   validateOptions(options);
 
-  const startYear = options.startYear || -Infinity;
-  const endYear = options.endYear || Infinity;
+  const startYear = options.startYear || 1970;
+  const endYear = options.endYear || 2050;
   const matchZones = options.matchZones || null;
   const matchCountries = options.matchCountries || null;
   const cacheDir = options.cacheDir || null;
